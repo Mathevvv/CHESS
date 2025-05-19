@@ -9,12 +9,14 @@ public class Main {
         Board board = new Board();
         board.setupDefaultPiecesPositions();
 
-        BoardConsoleRenderer renderer = new BoardConsoleRenderer();
-        renderer.render(board);
+//        BoardConsoleRenderer renderer = new BoardConsoleRenderer();
+//        renderer.render(board);
+//
+//        Piece piece = board.getPiece(new Coordinates(File.B, 1));
+//        Set<Coordinates> availableMoveSquares = piece.getAvailableMoveSquares(board);
 
-        Piece piece = board.getPiece(new Coordinates(File.B, 1));
-        Set<Coordinates> availableMoveSquares = piece.getAvailableMoveSquares(board);
-
+        Game game = new Game(board);
+        game.gameLoop();
 
         int x = 123;
 
