@@ -6,5 +6,6 @@ public class BoardFactory {
         Board board = new Board();
         String[] split = fen.split(" ");
 
+        return board;
     }
 }
